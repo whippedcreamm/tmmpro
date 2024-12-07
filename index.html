@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>website-mockup</title>
+    <meta property="og:title" content="website-mockup" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Poppins";
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <div class="home-header1">
+          <div class="home-heading1">
+            <navbar-wrapper
+              class="navbar-wrapper"
+              rootclassname="navbarundefined"
+            >
+              <!--Navbar component-->
+              <nav class="navbar-container navbarroot-class-name">
+                <div class="navbar-desktop">
+                  <div class="navbar-main">
+                    <div class="navbar-branding">
+                      <img
+                        src="https://raw.githubusercontent.com/whippedcreamm/public-assets/main/logos/tmm-main.svg"
+                        loading="eager"
+                        class="navbar-logo1"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/whippedcreamm/public-assets/main/logos/tmm-main.svg"
+                        loading="eager"
+                        class="navbar-logo2"
+                      />
+                    </div>
+                    <div class="navbar-links1">
+                      <a href="#tentang" class="navbar-link1 link">Tentang</a>
+                      <a href="#layanan" class="navbar-link2 link">Layanan</a>
+                      <a href="#kalkulator" class="navbar-link3 link">
+                        Kalkulator
+                      </a>
+                      <a href="#portofolio" class="navbar-link4 link">
+                        Portofoliio
+                      </a>
+                    </div>
+                  </div>
+                  <div class="navbar-cta">
+                    <div class="navbar-kontak1">
+                      <span class="navbar-kontak2">Hubungi Kami</span>
+                    </div>
+                    <a href="#mobile-menu" class="navbar-link5">
+                      <img
+                        id="open-mobile-menu"
+                        alt="pastedImage"
+                        src="public/external/pastedimage-8o98.svg"
+                        class="navbar-hamburger-menu"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div id="mobile-menu" class="navbar-mobile">
+                  <div class="navbar-top1">
+                    <img
+                      alt="image"
+                      src="https://raw.githubusercontent.com/whippedcreamm/tmmpro-website/main/assets/tmm-main.svg?token=GHSAT0AAAAAACTJBLKHDKQKCRHZ57AZMMW4ZTDZGIA"
+                      class="navbar-image1"
+                    />
+                    <svg
+                      id="close-mobile-menu"
+                      viewBox="0 0 1024 1024"
+                      class="navbar-icon10"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="navbar-links2">
+                    <a href="#layanan" class="navbar-layanan1">Features</a>
+                    <a href="#kalkulator" class="navbar-kalkulator1">
+                      How it works
+                    </a>
+                    <a href="#portofolio" class="navbar-portofolio1">Prices</a>
+                    <a href="#kontak" class="navbar-hubungi-kami">Contact</a>
+                  </div>
+                </div>
+                <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+                  <img
+                    alt="image"
+                    src="https://raw.githubusercontent.com/whippedcreamm/public-assets/main/logos/tmm-main.svg"
+                    class="navbar-logo3"
+                  />
+                  <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
+                    <nav class="navbar-links3">
+                      <a href="#tentang" class="navbar-tentang1">Tentang</a>
+                      <a href="#layanan" class="navbar-layanan2">Layanan</a>
+                      <a href="#kalkulator" class="navbar-kalkulator2">
+                        Kalkulator
+                      </a>
+                      <a href="#portofolio" class="navbar-portofolio2">
+                        <span class="navbar-text1">Portofolio</span>
+                        <br />
+                      </a>
+                    </nav>
+                    <div class="navbar-buttons">
+                      <button class="navbar-login button">Login</button>
+                      <a href="#kontak" class="navbar-contact-us button">
+                        <span>
+                          <span>Hubungi Kami</span>
+                          <br />
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div data-thq="thq-burger-menu" class="navbar-burger-menu">
+                    <svg viewBox="0 0 1024 1024" class="navbar-icon12">
+                      <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
+                    <div class="navbar-nav">
+                      <div class="navbar-top2">
+                        <img
+                          alt="image"
+                          src="https://raw.githubusercontent.com/whippedcreamm/public-assets/main/logos/tmm-main.svg"
+                          class="navbar-image2"
+                        />
+                        <div
+                          data-thq="thq-close-menu"
+                          class="navbar-close-menu"
+                        >
+                          <svg viewBox="0 0 1024 1024" class="navbar-icon14">
+                            <path
+                              d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <nav class="navbar-links4">
+                        <a href="#kontak" class="navbar-tentang2">Tentang</a>
+                        <a href="#layanan" class="navbar-layanan3">Layanan</a>
+                        <a href="#kalkulator" class="navbar-kalkulator3">
+                          Kalkulator
+                        </a>
+                        <a href="#portofolio" class="navbar-portofolio3">
+                          Portofolio
+                        </a>
+                        <a href="#kontak" class="navbar-kontak3">
+                          Hubungi Kami
+                        </a>
+                      </nav>
+                    </div>
+                    <div>
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="navbar-icon16"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="navbar-icon18"
+                      >
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 602.2582857142856 1024"
+                        class="navbar-icon20"
+                      >
+                        <path
+                          d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </header>
+              </nav>
+            </navbar-wrapper>
+          </div>
+          <div class="home-hero">
+            <div class="home-content1">
+              <h1>
+                <span class="home-text11">Bijak</span>
+                <span class="home-text12"></span>
+                <span class="home-text13">Hari Ini,</span>
+                <br class="home-text14" />
+                <span class="home-text15">Yakin</span>
+                <span class="home-text16"></span>
+                <span class="home-text17">Hari Esok</span>
+                <br />
+              </h1>
+              <span class="home-caption">
+                Rencanakan keuangan dan perpajakan dengan kami, Mitra terbaik
+                untuk solusi keuangan Anda di masa depan.
+              </span>
+              <div class="home-hero-buttons">
+                <button type="button" class="home-button1 button">
+                  <span>
+                    <span>Request for Call</span>
+                    <br />
+                  </span>
+                </button>
+                <button type="button" class="home-button2 button">
+                  <span>
+                    <span class="home-text23">Selengkapnya</span>
+                    <br />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="home-images">
+              <div class="home-column">
+                <img
+                  alt="hero image"
+                  src="https://raw.githubusercontent.com/whippedcreamm/tmmpro-website/main/assets/shapes_v2.svg"
+                  class="home-hero-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tentang" class="home-mengapa-kami">
+          <div class="home-header2">
+            <div class="home-heading2">
+              <h2 class="home-text25">Bersama Kami</h2>
+              <span class="home-text26">
+                Kami berkomitmen memberikan layanan terbaik dengan mengutamakan
+                ketepatan, efisiensi, dan perencanaan dengan mengikuti standar
+                keuangan.
+              </span>
+            </div>
+          </div>
+          <div class="home-list">
+            <div class="home-list1">
+              <svg viewBox="0 0 1024 1024" class="home-icon10">
+                <path d="M960 608l-288 288-96-96-64 64 160 160 352-352z"></path>
+                <path
+                  d="M448 768h320v-115.128c-67.22-39.2-156.308-66.11-256-74.26v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h448v-64z"
+                ></path>
+              </svg>
+              <span class="home-text27">
+                <span class="home-text28">Agents Berpengalaman</span>
+                <br />
+              </span>
+            </div>
+            <div class="home-list2">
+              <svg viewBox="0 0 1024 1024" class="home-icon13">
+                <path
+                  d="M854 512v-342h-214v342l106-64zM854 86q34 0 59 25t25 59v512q0 34-25 60t-59 26h-512q-34 0-60-26t-26-60v-512q0-34 26-59t60-25h512zM170 256v598h598v84h-598q-34 0-59-25t-25-59v-598h84z"
+                ></path>
+              </svg>
+              <span class="home-text30">
+                <span class="home-text31">
+                  Pembukuan dengan Standar ETAP dan PSAK
+                </span>
+                <br />
+              </span>
+            </div>
+            <div class="home-list3">
+              <svg viewBox="0 0 1097.142857142857 1024" class="home-icon15">
+                <path
+                  d="M438.857 658.286h219.429v-54.857h-73.143v-256h-65.143l-84.571 78.286 44 45.714c13.714-12 22.286-18.286 31.429-32.571h1.143v164.571h-73.143v54.857zM731.429 512c0 104-62.857 237.714-182.857 237.714s-182.857-133.714-182.857-237.714 62.857-237.714 182.857-237.714 182.857 133.714 182.857 237.714zM1024 658.286v-292.571c-80.571 0-146.286-65.714-146.286-146.286h-658.286c0 80.571-65.714 146.286-146.286 146.286v292.571c80.571 0 146.286 65.714 146.286 146.286h658.286c0-80.571 65.714-146.286 146.286-146.286zM1097.143 182.857v658.286c0 20-16.571 36.571-36.571 36.571h-1024c-20 0-36.571-16.571-36.571-36.571v-658.286c0-20 16.571-36.571 36.571-36.571h1024c20 0 36.571 16.571 36.571 36.571z"
+                ></path>
+              </svg>
+              <span class="home-text33">
+                <span class="home-text34">Harga Terjangkau</span>
+                <br />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="layanan" class="home-layanan">
+          <div class="home-header3">
+            <div class="home-heading3">
+              <h2 class="home-text36">Berbagai Layanan</h2>
+              <span class="home-text37">
+                Semua yang Anda butuhkan ada di sini. Dari perencanaan hingga
+                pelaksanaan, kami siap membantu.
+              </span>
+            </div>
+          </div>
+          <div class="home-list-layanan">
+            <div class="home-pendampingan">
+              <img
+                alt="image"
+                src="public/external/vector.svg"
+                class="home-image10"
+              />
+              <div class="home-content2">
+                <span class="home-title1">Pendampingan</span>
+                <span class="home-description1">
+                  Layanan pendampingan SDM untuk day-to-day manajemen yang
+                  berjalan oleh Finance Expert.
+                </span>
+              </div>
+            </div>
+            <div class="home-konsultasi">
+              <img
+                alt="image"
+                src="public/external/vector6113-r6dl.svg"
+                class="home-image11"
+              />
+              <div class="home-content3">
+                <span class="home-title2">Konsultasi</span>
+                <span class="home-description2">
+                  Konsultasi komprehensif terkait kondisi keuangan berdasarkan
+                  baseline dan pasca-kejadian keuangan.
+                </span>
+              </div>
+            </div>
+            <div class="home-analisis">
+              <img
+                alt="image"
+                src="public/external/vector6113-6zj.svg"
+                class="home-image12"
+              />
+              <div class="home-content4">
+                <span class="home-title3">Analisis</span>
+                <span class="home-description3">
+                  Layanan analisis dan evaluasi hasil pembukuan, rencana
+                  keuangan dan perpajakan.&nbsp;
+                </span>
+              </div>
+            </div>
+            <div class="home-perpajakan-op">
+              <img
+                alt="image"
+                src="public/external/vector6113-lvvs.svg"
+                class="home-image13"
+              />
+              <div class="home-content5">
+                <span class="home-title4">Perpajakan Pribadi</span>
+                <span class="home-description4">
+                  Perhitungan pajak pribadi yang perlu dikompres, dilaporkan,
+                  dan dibayarkan dengan case multi-income.
+                </span>
+              </div>
+            </div>
+            <div class="home-pembukuan">
+              <img
+                alt="image"
+                src="public/external/vector6114-cupp.svg"
+                class="home-image14"
+              />
+              <div class="home-content6">
+                <span class="home-title5">Pembukuan</span>
+                <span class="home-description5">
+                  Pembuatan pembukuan alur kas keuangan day-to-day operations.
+                </span>
+              </div>
+            </div>
+            <div class="home-projection">
+              <img
+                alt="image"
+                src="public/external/vector6114-6m1e.svg"
+                class="home-image15"
+              />
+              <div class="home-content7">
+                <span class="home-title6">Rencana Anggaran</span>
+                <span class="home-description6">
+                  Perencanaan ideal alur kas berdasarkan kondisi keuangan
+                  aktual.
+                </span>
+              </div>
+            </div>
+            <div class="home-pajak-badan">
+              <img
+                alt="image"
+                src="public/external/vector6114-yjl.svg"
+                class="home-image16"
+              />
+              <div class="home-content8">
+                <span class="home-title7">Perpajakan Badan</span>
+                <span class="home-description7">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusa
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="kalkulator" class="home-kalkulator">
+          <div class="home-tag"><span class="home-text38">TMMFlow</span></div>
+          <div class="home-header4">
+            <div class="home-heading4">
+              <h2 class="home-text39">Kalkulator Simulasi PPh Badan</h2>
+              <span class="home-text40">
+                Simulasikan perhitungan PPH Badan yang harus dibayarkan oleh
+                perusahaan Anda
+              </span>
+            </div>
+          </div>
+          <div class="home-header5">
+            <div class="home-container2">
+              <div class="home-container3">
+                <button type="button" class="home-hitung1 button">
+                  <span class="home-text41">
+                    <span>Hitung</span>
+                    <br />
+                  </span>
+                </button>
+                <button type="button" class="home-hitung2 button">
+                  <span class="home-text44">
+                    <span>Konsultasi</span>
+                    <br />
+                  </span>
+                </button>
+              </div>
+              <div class="home-kredit-pajak1">
+                <span class="home-text47">Nilai PPh:</span>
+                <input
+                  type="text"
+                  placeholder="0"
+                  class="home-textinput1 input"
+                />
+              </div>
+              <div class="home-kredit-pajak2">
+                <span class="home-text48">Kredit Pajak :</span>
+                <input
+                  type="text"
+                  placeholder="Masukan nilai kredit pajak dalam setahun (jika ada)"
+                  class="home-textinput2 input"
+                />
+              </div>
+              <div class="home-net-profit">
+                <span class="home-text49">Net Profit :</span>
+                <input
+                  type="text"
+                  placeholder="Masukan nilai Net profit dalam setahun"
+                  class="home-textinput3 input"
+                />
+              </div>
+              <div class="home-total-revenue">
+                <span class="home-text50">Total Revenue :</span>
+                <input
+                  type="text"
+                  placeholder="Masukan total revenue perusahaan dalam setahun"
+                  class="home-textinput4 input"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="home-text51">Firtu akan segera tersedia</span>
+        </div>
+        <div id="portofolio" class="home-portofolio">
+          <div class="home-content9">
+            <div class="home-mitra">
+              <h2 class="home-text52">Mitra Kerja</h2>
+              <div class="home-logo1">
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image17"
+                />
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image18"
+                />
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image19"
+                />
+              </div>
+            </div>
+            <div class="home-separator1"></div>
+            <div class="home-klien">
+              <h2 class="home-text53">Klien</h2>
+              <div class="home-logo2">
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image20"
+                />
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image21"
+                />
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image22"
+                />
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="home-image23"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="kontak" class="home-kontak">
+          <div class="home-heading5">
+            <h2 class="home-text54">Mulai Berkonsultasi</h2>
+            <span class="home-text55">
+              Pilih cara berkomunikasi dengan kami. Chat via WhatsApp atau isi
+              form kebutuhan
+            </span>
+          </div>
+          <div class="home-cta">
+            <a
+              href="https://wa.me/6285179926415"
+              id="cta-button"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link1 button"
+            >
+              Chat WhatsApp
+            </a>
+            <button id="cta-button" type="button" class="home-button3 button">
+              Hubungi Saya
+            </button>
+          </div>
+        </div>
+        <div class="home-footer">
+          <div class="home-heading6">
+            <div class="home-informasi">
+              <div class="home-heading7">
+                <img
+                  src="https://raw.githubusercontent.com/whippedcreamm/public-assets/main/logos/tmm-white.svg"
+                  class="home-logo-white"
+                />
+                <span class="home-text56">
+                  <span class="home-text57">PT Triruang Makna Manggala</span>
+                  <br />
+                  <span>Bogor, Jawa Barat - Indonesia</span>
+                </span>
+                <span class="home-text60">
+                  <span class="home-text61">Telp: +62-851-7992-6415</span>
+                  <br class="home-text62" />
+                  <span class="home-text63">Email: contact@tmmpro.id</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="home-separator2"></div>
+          <div class="home-social1">
+            <div class="home-social2">
+              <a
+                href="https://www.linkedin.com/company/tmmpro/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link2"
+              >
+                <svg viewBox="0 0 1024 1024" class="home-icon17">
+                  <path
+                    d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 832h-128v-448h128v448zM320 320c-35.4 0-64-28.6-64-64s28.6-64 64-64c35.4 0 64 28.6 64 64s-28.6 64-64 64zM832 832h-128v-256c0-35.4-28.6-64-64-64s-64 28.6-64 64v256h-128v-448h128v79.4c26.4-36.2 66.8-79.4 112-79.4 79.6 0 144 71.6 144 160v288z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/tmmflow.id/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link3"
+              >
+                <svg viewBox="0 0 1024 1024" class="home-icon19">
+                  <path
+                    d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"
+                  ></path>
+                  <path
+                    d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"
+                  ></path>
+                  <path
+                    d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <span class="home-text65">© 2024. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
